@@ -1,3 +1,5 @@
+import numpy as np
+
 #small example of input layer
 input = [3,4,2, 2.5]
 
@@ -19,3 +21,19 @@ output = [input[0]*weight1[0] + input[1]*weight1[1] + input[2]*weight1[2] weight
 
 
 print(output)
+
+#Simplifying the code
+
+weights = [[0,3,3, 1], [0,3,3, 1], [0,3,3, 1]]
+biases = [2, 3, .5]
+
+some_value = .05
+weight = .06
+bias = .7 
+
+#Numpy work 
+
+output = np.dot((weights, inputs) + bias)
+
+#Dot product, look at shaping issue 
+
